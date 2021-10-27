@@ -4,7 +4,8 @@ pipeline {
         stage('Stage 1') {
             steps {
                 echo 'Hello world!' 
-                sh 'sleep 50'
+                sh 'ls -al'
+                sh 'terraform validate'
             }
         }
     }
